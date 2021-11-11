@@ -1,0 +1,61 @@
+main {
+    text-align: center;
+}
+
+.link1 {
+    text-align: right;
+    height: 90%;
+    width: 90%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(82, 49, 49);
+    height: 90%;
+    width: 90%;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(100, 63, 63);
+    color: white;
+    border-spacing: 0;
+}
+
+.icon-active {
+    color: rgb(23, 192, 23);
+}
+
+.contenedorm {
+    height: 90%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr th:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    th {
+        display: block;
+        text-align: center;
+    }
+    th:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+}
